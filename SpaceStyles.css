@@ -1,0 +1,80 @@
+body {
+    background-image:url("MoonBackdrop.jpeg");
+    background-color: black;
+    font-family:'Times New Roman', Times, serif;
+    color: azure;
+    text-align:center;
+      
+    
+  
+}
+h1 {    
+    color: rgb(12, 226, 226);
+    text-align:center;
+    text-anchor: middle;
+  
+}
+
+.tbl {
+  text-align: center;
+
+}
+.bg-image {
+   
+    background-image: url("MoonBackdrop.jpeg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%; 
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+  }
+  
+.button {font-size: 14px;min-width: auto; min-height: 14px; padding: 1%; }
+.button::after {font-size: 14px;}
+
+.button::after {
+content: "Begin Test Sequence";
+}
+.button:hover::after {
+ content: "Initiate Test Sequence!";
+}
+
+.button:hover {
+background-color: green;
+border: 3px solid #034714;
+color: white !important;
+}
+
+.action {font-size: 14px;min-width: auto; min-height: 14px; padding: 1%;  }
+.action ::after {font-size: 14px;}
+
+.action::after {
+content:"Pause Test Sequence";
+}
+.action:hover::after {
+ content: "Pausing Test Sequence!";
+}
+
+.action:hover {
+background-color: rgb(207, 39, 5);
+border: 3px solid #580703;
+color: white;
+}
+
+.slide-progress-bar {
+  width: 100px;
+  height: 10px;
+  background-color: rgba(70, 17, 227, 0.9);
+  transition: width 10s linear;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.progress-bar {
+  height: 10px;
+  width: 0px;
+  background-color: rgb(255, 21, 0);
+  position: relative;
+  transition-duration:1ms;  
+}
